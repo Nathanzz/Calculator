@@ -1,2 +1,2 @@
 /* A small calculator. free opensource and feel free to comment improvements that I could make. updates will be once
-every week untill its finished. Please share and star this project and I will keep updates coming*/
+every week untill its finished. Please share and star this project and I will keep updates coming. Also the version update information will be posted on another file.*/
