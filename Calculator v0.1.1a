@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+float a , b;
+int process;
+cout << "Hello. I am a calculator. Please do not enter any letters while using me. Thanks." << endl;
+while (true){
+cout << "Type in a number (0 to exit): ";
+cin >> a;
+if (a == 0)
+return 0;
+else
+cout << " Enter a second number: ";
+cin >> b;
+cout << "Would you like to add(1), subtract(2), multiply(3), or divide(4) your numbers? ";
+cin >> process;
+if (process == 1)
+cout << "The sum of the numbers is " << a + b << endl;
+else if (process == 2)
+cout << "The difference of the numbers is " << a - b << endl;
+else if (process == 3)
+cout << "The product of the numbers is " << a * b << endl;
+else if (process == 4)
+cout << "The quotient of the numbers is " << a / b << endl;
+else if (process != 1 , 2 , 3 , 4)
+cout << "Please type a number 1-4." << endl;
+}
+}
+
