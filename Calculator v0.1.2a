@@ -1,0 +1,60 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
+#include <string.h>
+#include <math.h>
+#define HIGH 10000000000
+#define LOW -1000000000
+int main()
+{
+    char command;
+    float num1 = 0, num2 = 0, sum = 0, difference = 0, product = 0;
+    float quotient = 0, square = 0, reciprocal = 0;
+    printf("Please enter the required calculation\n");
+    scanf("%f %f %c", &num1, &num2, &command);
+    if(num1 >= HIGH || num2 >= HIGH || num1 <= LOW || num2 <= LOW)
+    {
+        printf("Error Number 5\n");
+    }
+    else
+    {
+    switch(command)
+        {
+        case '+':
+                sum=num1+num2;
+                 printf("%.0f + %0f = %.0f\n", num1, num2, sum);
+               break;
+        case '-':
+                 difference=num1-num2;
+                 printf("%.0f - %.0f = %.0f\n", num1, num2, difference);
+                 break;
+        case '*':
+                 product=num1*num2;
+                 printf("%.0f * %.0f = %.0f\n", num1, num2, product);
+                 break;
+        case '/':
+                 if(num1 == 0 || num2 == 0)
+                 {
+                    printf("Error Number 3\n");
+                 }
+                 else
+                 {
+                 quotient=num1/num2;
+                 printf("%.0f / %.0f = %.2f\n", num1, num2, quotient);
+                 }
+                 break;
+        case 'S':
+                 square=num1*num1;
+                 printf("%.0f S = %.2f\n", num1, square);
+                 break;
+        case 'R':
+                 reciprocal=1/num1;
+                 printf("%.0f R = %.2f\n", num1, reciprocal);
+                 break;
+        default:
+                printf("Error Number 4\n");
+        }
+        printf("Please press any key to exit the program.\n");
+    }
+    getch();
+}
